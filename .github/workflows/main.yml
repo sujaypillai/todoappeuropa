@@ -10,7 +10,7 @@ on:
 
 env:
   # This needs to be unique across all of netlify.app
-  APP_NAME: todoapp-dagger-europa
+  APP_NAME: todoapp-dagger-europa-sop
   NETLIFY_TEAM: sujaypillaiteam
   # Get one from https://app.netlify.com/user/applications/personal
   NETLIFY_TOKEN: ${{ secrets.NETLIFY_TOKEN }}
