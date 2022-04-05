@@ -28,7 +28,13 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
+        
+      - name: Install Dagger
+        uses: dagger/dagger-for-github@v2
+        with:
+          install-only: true
 
       - name: Deploy to Netlify
         uses: dagger/dagger-for-github@v2
