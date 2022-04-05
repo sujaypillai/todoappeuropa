@@ -36,6 +36,9 @@ jobs:
         with:
           install-only: true
           
+      - name: Dagger Project Init
+        run: dagger project init 
+        
       - name: Dagger Project Update
         run: dagger project update
     
